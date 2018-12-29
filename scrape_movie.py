@@ -88,8 +88,4 @@ movie_ratings = movie_ratings[['movie', 'year', 'imdb', 'metascore', 'votes', 'g
 movie_ratings.head()
 print(movie_ratings.head(10))
 
-#clean the scraped data
-#movie_ratings['year'].unique()
-#movie_ratings.loc[:, 'year'] = movie_ratings['year'].str[-5:-1].astype(int)
-#print(movie_ratings['year'].head(3))
 movie_ratings.to_csv('movie_ratings.csv')
